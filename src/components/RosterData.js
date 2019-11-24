@@ -62,7 +62,7 @@ const Roster = () => {
     const [roster, setRoster] = useState({});
   
     async function fetchData(team) {
-        const res = await fetch("https://api.sportsdata.io/v3/nba/stats/json/Players/" + team,
+        const res = await fetch("https://cors-anywhere.herokuapp.com/https://api.sportsdata.io/v3/nba/stats/json/Players/" + team,
         {headers: {
           'Ocp-Apim-Subscription-Key': 'af3a771073da4ff2960f22591f39accc'
         }});

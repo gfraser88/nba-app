@@ -34,7 +34,7 @@ const Teams = () => {
   
     //https://api.sportsdata.io/v3/nba/scores/json/teams
     async function fetchData() {
-          const res = await fetch("https://api.sportsdata.io/v3/nba/scores/json/Standings/2020",
+          const res = await fetch("https://cors-anywhere.herokuapp.com/https://api.sportsdata.io/v3/nba/scores/json/Standings/2020",
           {headers: {
             'Ocp-Apim-Subscription-Key': 'af3a771073da4ff2960f22591f39accc'
           }});
